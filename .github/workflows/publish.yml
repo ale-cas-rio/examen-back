@@ -44,7 +44,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ env.REGISTRY }}/${{ github.actor }}/${{ github.repository }}:back-imagen:latest
+          tags: ${{ env.REGISTRY }}/${{ github.repository }}:latest
 
   build-and-push-to-dockerhub:
     runs-on: ubuntu-latest
